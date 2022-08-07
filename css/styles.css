@@ -1,7 +1,7 @@
 :root {
-  --main-font-family: "Barlow Condensed";
-  --secondary-font-family: "Bellefair";
-  --third-font-family: "Barlow";
+  --main-font-family: 'Barlow Condensed';
+  --secondary-font-family: 'Bellefair';
+  --third-font-family: 'Barlow';
   --main-font-color: #ffffff;
   --secondary-font-color: #d0d6f9;
   --third-font-color: #0b0d17;
@@ -18,18 +18,11 @@ body {
   background-size: cover;
 }
 
-#destination-page-body {
-  background-image: url(/images/destination-background.jpg);
-  background-size: cover;
-}
-
 .container {
   padding: 0 15px;
   margin: 0 auto;
 
   width: 1140px;
-
-  /* outline: 1px solid tomato; */
 }
 
 .list {
@@ -41,6 +34,12 @@ body {
 
 .current {
   border-bottom: 3px solid var(--main-font-color);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 p {
@@ -141,6 +140,7 @@ a {
   color: var(--main-font-color);
 }
 
+/* Home page */
 /* Hero section */
 
 .hero {
@@ -211,7 +211,148 @@ a {
 
 .btn:hover,
 .btn:focus {
-  transform: scale(1.2);
+  outline: 88px solid rgba(255, 255, 255, 0.1);
 
-  transition: transform 0.6s;
+  transition: outline 0.5s;
+}
+
+/* Destination page */
+
+#destination-page-body {
+  background-image: url(/images/destination-background.jpg);
+  background-size: cover;
+}
+
+.destination {
+  padding-top: 114px;
+
+  font-family: var(--main-font-family);
+
+  color: var(--main-font-color);
+}
+
+.destination .title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.21;
+
+  letter-spacing: 4.725px;
+}
+
+.destination .title::before {
+  margin-right: 28px;
+
+  content: '01';
+
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.21;
+
+  letter-spacing: 4.725px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.destination .wrapper {
+  display: flex;
+}
+
+.moon-img {
+  margin-top: 97px;
+
+  display: inline-block;
+}
+
+.destination .group {
+  margin-left: auto;
+
+  width: 39%;
+}
+
+.planet-list {
+  margin-top: 64px;
+
+  display: flex;
+}
+
+.planet-list .item {
+  padding-bottom: 12px;
+}
+
+.planet-list .item:not(.current):hover {
+  border-bottom: 3px solid var(--secondary-font-color);
+
+  transition: border-bottom 0.3s;
+}
+
+.planet-list .item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.planet-list .item a {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.19;
+  letter-spacing: 2.7px;
+  color: var(--secondary-font-color);
+}
+
+.planet-list .item:first-child a {
+  color: var(--main-font-color);
+}
+
+.destination .section-title {
+  margin-top: 37px;
+
+  font-family: var(--secondary-font-family);
+
+  font-weight: 400;
+  font-size: 6.25rem;
+  line-height: 1.15;
+}
+
+.destination .description {
+  margin-top: 14px;
+  padding-bottom: 54px;
+
+  font-family: var(--third-font-family);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.78;
+
+  border-bottom: 1px solid #383b4b;
+
+  color: var(--secondary-font-color);
+}
+
+.group-footer {
+  margin-top: 28px;
+
+  display: flex;
+}
+
+.avg-distance {
+  margin-right: 79px;
+}
+
+.group-footer .footer-description {
+  font-weight: 400;
+  font-size: 1.143rem;
+  line-height: 1.21;
+  letter-spacing: 2.3625px;
+
+  color: var(--secondary-font-color);
+}
+
+.group-footer .sub-title {
+  margin-top: 12px;
+
+  font-family: var(--secondary-font-family);
+
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.14;
 }

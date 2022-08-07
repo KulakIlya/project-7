@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,7 +22,7 @@
   </head>
   <body id="destination-page-body">
     <header class="header">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <svg width="48" height="48">
           <use xlink:href="./images/sprite.svg#logo"></use>
         </svg>
@@ -41,5 +41,39 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section class="destination">
+        <div class="container">
+          <h2 class="title">Pick your destination</h2>
+          <div class="wrapper">
+            <img class="moon-img" width="445" src="./images/moon.png" alt="Moon" />
+            <div class="group">
+              <ul class="planet-list list">
+                <li class="current item"><a href="#">MOON</a></li>
+                <li class="item"><a href="#">MARS</a></li>
+                <li class="item"><a href="#">EUROPA</a></li>
+                <li class="item"><a href="#">TITAN</a></li>
+              </ul>
+              <h1 class="section-title">MOON</h1>
+              <p class="description">
+                See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                regain perspective and come back refreshed. While you’re there, take in some history
+                by visiting the Luna 2 and Apollo 11 landing sites.
+              </p>
+              <footer class="group-footer">
+                <div class="avg-distance">
+                  <p class="footer-description">AVG. DISTANCE</p>
+                  <h3 class="sub-title">384,400 KM</h3>
+                </div>
+                <div class="travel-time">
+                  <p class="footer-description">EST. TRAVEL TIME</p>
+                  <h3 class="sub-title">3 DAYS</h3>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
