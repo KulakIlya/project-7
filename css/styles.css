@@ -50,6 +50,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  padding: 0;
+
+  border: 0;
+}
+
 /* Header */
 
 .header .container {
@@ -124,8 +130,6 @@ a {
 }
 
 .nav-list .item {
-  padding: 39px 0;
-
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.19;
@@ -137,6 +141,10 @@ a {
 }
 
 .nav-list .item a {
+  padding: 39px 0;
+
+  display: inline-block;
+
   color: var(--main-font-color);
 }
 
@@ -171,7 +179,7 @@ a {
   color: var(--main-font-color);
 }
 
-.main-description {
+.hero .main-description {
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 1.75rem;
@@ -355,4 +363,100 @@ a {
   font-weight: 400;
   font-size: 1.75rem;
   line-height: 1.14;
+}
+
+/* Crew page */
+
+#crew-page-body {
+  background-image: url(/images/crew-background.jpg);
+
+  background-size: cover;
+}
+
+.meet-crew .container {
+  padding-top: 76px;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.meet-crew .group {
+  font-family: var(--secondary-font-family);
+}
+
+.meet-crew .title,
+.meet-crew .title::before {
+  font-family: var(--main-font-family);
+
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.21;
+
+  letter-spacing: 4.725px;
+}
+
+.meet-crew .title::before {
+  margin-right: 24px;
+
+  content: '02';
+
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.meet-crew .main-description {
+  margin-top: 152px;
+
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.16;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.meet-crew .section-title {
+  margin-top: 15px;
+
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.meet-crew .description {
+  margin-top: 27px;
+
+  font-family: var(--third-font-family);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.78;
+
+  max-width: 429px;
+
+  color: var(--secondary-font-color);
+}
+
+.btn-list {
+  margin-top: 120px;
+
+  display: flex;
+}
+
+.btn-list .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.btn-list .item button {
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  opacity: 0.17;
+}
+
+.btn-list .item .active {
+  opacity: 1;
 }
