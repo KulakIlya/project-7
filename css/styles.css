@@ -265,6 +265,8 @@ button {
 }
 
 .destination .wrapper {
+  padding-bottom: 112px;
+
   display: flex;
 }
 
