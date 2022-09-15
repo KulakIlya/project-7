@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Normalize CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,61 +14,404 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body id="destination-page-body">
-    <header class="header">
-      <a class="logo" href="index.html">
-        <svg width="48" height="48">
-          <use xlink:href="./images/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <div class="container">
-        <hr />
-        <nav class="navigation">
-          <ul class="nav-list list">
-            <li class="item"><a href="index.html">00 HOME</a></li>
-            <li class="item current">
-              <a href="#">01 DESTINATION</a>
-            </li>
-            <li class="item"><a href="crew.html">02 CREW</a></li>
-            <li class="item"><a href="#">03 TECHNOLOGY</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header id="main-header">
+      <nav class="navbar navbar-expand-md" aria-label="Third navbar example">
+        <div class="container-fluid ps-4">
+          <a class="navbar-brand p-0 bg-white rounded-circle" href="index.html">
+            <svg class="logo" width="48" height="48">
+              <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler me-4 p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <hr class="text-white d-none d-lg-inline" />
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mb-2 mb-sm-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><span class="nav-number d-none d-lg-inline-block">00 </span>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" aria-current="page" href="#"
+                  ><span class="nav-number d-none d-lg-inline-block">01 </span>Destination</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="crew.html"
+                  ><span class="nav-number d-none d-lg-inline-block">02 </span>Crew</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="technology.html"
+                  ><span class="nav-number d-none d-lg-inline-block">03 </span>Technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-      <section class="destination">
-        <div class="container">
-          <h2 class="title">Pick your destination</h2>
-          <div class="wrapper">
-            <img class="moon-img" width="445" src="./images/moon.png" alt="Moon" />
-            <div class="group">
-              <ul class="planet-list list">
-                <li class="current item"><a href="#">MOON</a></li>
-                <li class="item"><a href="#">MARS</a></li>
-                <li class="item"><a href="#">EUROPA</a></li>
-                <li class="item"><a href="#">TITAN</a></li>
-              </ul>
-              <h1 class="section-title">MOON</h1>
-              <p class="description">
-                See our planet as you’ve never seen it before. A perfect relaxing trip away to help
-                regain perspective and come back refreshed. While you’re there, take in some history
-                by visiting the Luna 2 and Apollo 11 landing sites.
-              </p>
-              <footer class="group-footer">
-                <div class="avg-distance">
-                  <p class="footer-description">AVG. DISTANCE</p>
-                  <h3 class="sub-title">384,400 KM</h3>
+    <main class="main-content">
+      <section id="destination">
+        <div class="container-fluid container-lg">
+          <h3 class="section-title text-uppercase ms-4 ms-lg-0">Pick your destination</h3>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide destination-carousel"
+            data-bs-touch="true"
+            data-bs-ride="carousel"
+            data-bs-interval="10000"
+          >
+            <ul class="carousel-inner">
+              <li class="carousel-item active">
+                <div class="row">
+                  <div class="col-auto col-lg-6 mx-auto mx-lg-0 me-auto">
+                    <img class="planet-img" src="./images/moon.png" alt="Moon image" />
+                  </div>
+                  <div class="col-6 carousel-caption planet-group mx-auto mt-5 mt-lg-0">
+                    <ul class="navbar-nav planet-list d-flex flex-row">
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="nav-link planet-btn current"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        >
+                          MOON
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        >
+                          MARS
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        >
+                          EUROPA
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        >
+                          TITAN
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="destination-wrapper">
+                      <h2 class="planet-heading title">MOON</h2>
+                      <p class="destination-text description">
+                        See our planet as you’ve never seen it before. A perfect relaxing trip away
+                        to help regain perspective and come back refreshed. While you’re there, take
+                        in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                      </p>
+                    </div>
+                    <div class="planet-group-footer">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <p class="text">AVG. DISTANCE</p>
+                          <h4 class="title">384,400 KM</h4>
+                        </div>
+                        <div class="col-sm-6 mt-4 mt-sm-0">
+                          <p class="text">EST. TRAVEL TIME</p>
+                          <h4 class="title">3 DAYS</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="travel-time">
-                  <p class="footer-description">EST. TRAVEL TIME</p>
-                  <h3 class="sub-title">3 DAYS</h3>
+              </li>
+              <li class="carousel-item">
+                <div class="row">
+                  <div class="col-auto ms-auto ms-lg-0 me-auto">
+                    <img class="planet-img" src="./images/mars.png" alt="Mars image" />
+                  </div>
+                  <div class="col-6 carousel-caption planet-group mx-auto mt-5 mt-lg-0">
+                    <ul class="navbar-nav planet-list d-flex flex-row">
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        >
+                          MOON
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn current"
+                          aria-current="true"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        >
+                          MARS
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        >
+                          EUROPA
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        >
+                          TITAN
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="destination-wrapper">
+                      <h2 class="planet-heading title">MARS</h2>
+                      <p class="destination-text description">
+                        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus
+                        Mons, the tallest planetary mountain in our solar system. It’s two and a
+                        half times the size of Everest!
+                      </p>
+                    </div>
+                    <div class="planet-group-footer">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <p class="text">AVG. DISTANCE</p>
+                          <h4 class="title">225 MIL. KM</h4>
+                        </div>
+                        <div class="col-sm-6 mt-4 mt-sm-0">
+                          <p class="text">EST. TRAVEL TIME</p>
+                          <h4 class="title">9 MONTHS</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </footer>
-            </div>
+              </li>
+              <li class="carousel-item">
+                <div class="row">
+                  <div class="col-auto col-lg-6 mx-auto mx-lg-0 me-auto">
+                    <img class="planet-img" src="./images/europa.png" alt="Europa image" />
+                  </div>
+                  <div class="col-6 carousel-caption planet-group mx-auto mt-5 mt-lg-0">
+                    <ul class="navbar-nav planet-list d-flex flex-row">
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="nav-link planet-btn"
+                          aria-label="Slide 1"
+                        >
+                          MOON
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        >
+                          MARS
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn current"
+                          aria-current="true"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        >
+                          EUROPA
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        >
+                          TITAN
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="destination-wrapper">
+                      <h2 class="planet-heading title">EUROPA</h2>
+                      <p class="destination-text description">
+                        The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter
+                        lover’s dream. With an icy surface, it’s perfect for a bit of ice skating,
+                        curling, hockey, or simple relaxation in your snug wintery cabin.
+                      </p>
+                    </div>
+                    <div class="planet-group-footer">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <p class="text">AVG. DISTANCE</p>
+                          <h4 class="title">628 MIL. KM</h4>
+                        </div>
+                        <div class="col-sm-6 mt-4 mt-sm-0">
+                          <p class="text">EST. TRAVEL TIME</p>
+                          <h4 class="title">3 YEARS</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel-item">
+                <div class="row">
+                  <div class="col-auto col-lg-6 mx-auto mx-lg-0 me-auto">
+                    <img class="planet-img" src="./images/titan.png" alt="Titan image" />
+                  </div>
+                  <div class="col-6 carousel-caption planet-group mx-auto mt-5 mt-lg-0">
+                    <ul class="navbar-nav planet-list d-flex flex-row">
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="nav-link planet-btn"
+                          aria-label="Slide 1"
+                        >
+                          MOON
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        >
+                          MARS
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        >
+                          EUROPA
+                        </button>
+                      </li>
+                      <li class="planet item">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          class="nav-link planet-btn current"
+                          aria-current="true"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        >
+                          TITAN
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="destination-wrapper">
+                      <h2 class="planet-heading title">TITAN</h2>
+                      <p class="destination-text description">
+                        The only moon known to have a dense atmosphere other than Earth, Titan is a
+                        home away from home (just a few hundred degrees colder!). As a bonus, you
+                        get striking views of the Rings of Saturn.
+                      </p>
+                    </div>
+                    <div class="planet-group-footer">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <p class="text">AVG. DISTANCE</p>
+                          <h4 class="title">1.6 BIL. KM</h4>
+                        </div>
+                        <div class="col-sm-6 mt-4 mt-sm-0">
+                          <p class="text">EST. TRAVEL TIME</p>
+                          <h4 class="title">7 YEARS</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

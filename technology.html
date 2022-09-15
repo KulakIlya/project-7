@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body id="technology-page-body">
+    <header id="main-header">
+      <nav class="navbar navbar-expand-md" aria-label="Third navbar example">
+        <div class="container-fluid ps-4">
+          <a class="navbar-brand p-0 bg-white rounded-circle" href="index.html">
+            <svg class="logo" width="48" height="48">
+              <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler me-4 p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <hr class="text-white d-none d-lg-inline" />
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mb-2 mb-sm-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><span class="nav-number d-none d-lg-inline-block">00 </span>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destination.html"
+                  ><span class="nav-number d-none d-lg-inline-block">01 </span>Destination</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="crew.html"
+                  ><span class="nav-number d-none d-lg-inline-block">02 </span>Crew</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="#" aria-current="page"
+                  ><span class="nav-number d-none d-lg-inline-block">03 </span>Technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section id="technology">
+        <div class="container-fluid pe-0">
+          <h3 class="section-title text-uppercase ms-4 ms-lg-0 mb-0">SPACE LAUNCH 101</h3>
+
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide d-flex justify-content-between mt-4 mt-sm-5 mt-lg-0"
+            data-bs-ride="carousel"
+            data-bs-touch="true"
+            data-bs-interval="10000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-between">
+                  <div class="carousel-indicators col-lg-auto d-none d-lg-block">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    >
+                      1
+                    </button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      class=""
+                      aria-label="Slide 2"
+                    >
+                      2
+                    </button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      class=""
+                      aria-label="Slide 3"
+                    >
+                      3
+                    </button>
+                  </div>
+                  <div class="col-lg-auto text-group">
+                    <div class="carousel-caption d-block">
+                      <div class="m-carousel-indicators d-lg-none d-flex justify-content-center">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        >
+                          1
+                        </button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          class=""
+                          aria-label="Slide 2"
+                        >
+                          2
+                        </button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          class=""
+                          aria-label="Slide 3"
+                        >
+                          3
+                        </button>
+                      </div>
+                      <h3 class="carousel-title title">THE TERMINOLOGY…</h3>
+                      <h2 class="technology-name-title title mt-3 text-uppercase">
+                        LAUNCH VEHICLE
+                      </h2>
+                      <p class="carousel-text description mt-3 mt-sm-4">
+                        A launch vehicle or carrier rocket is a rocket-propelled vehicle used to
+                        carry a payload from Earth's surface to space, usually to Earth orbit or
+                        beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing
+                        150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col col-lg-auto text-center">
+                    <img
+                      class="carousel-img"
+                      src="./images/Launch-Vehicle-img.jpg"
+                      alt="Launch Vehicle photo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-between">
+                  <div class="carousel-indicators col-lg-auto d-none d-lg-block">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="0"
+                      aria-label="Slide 1"
+                    >
+                      1
+                    </button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 2"
+                    >
+                      2
+                    </button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      class=""
+                      aria-label="Slide 3"
+                    >
+                      3
+                    </button>
+                  </div>
+                  <div class="col-lg-auto text-group">
+                    <div class="carousel-caption d-block">
+                      <div class="m-carousel-indicators d-lg-none d-flex justify-content-center">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        >
+                          1
+                        </button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 2"
+                        >
+                          2
+                        </button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          class=""
+                          aria-label="Slide 3"
+                        >
+                          3
+                        </button>
+                      </div>
+                      <h3 class="carousel-title title">THE TERMINOLOGY…</h3>
+                      <h2 class="technology-name-title title mt-3 text-uppercase">SPACEPORT</h2>
+                      <p class="carousel-text description mt-3 mt-sm-4">
+                        A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+                        by analogy to the seaport for ships or airport for aircraft. Based in the
+                        famous Cape Canaveral, our spaceport is ideally situated to take advantage
+                        of the Earth’s rotation for launch.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col col-lg-auto text-center">
+                    <img
+                      class="carousel-img"
+                      src="./images/Spaceport-img.jpg"
+                      alt="Spaceport photo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-between">
+                  <div class="carousel-indicators col-lg-auto d-none d-lg-block">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="0"
+                      aria-label="Slide 1"
+                    >
+                      1
+                    </button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      class=""
+                      aria-label="Slide 2"
+                    >
+                      2
+                    </button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 3"
+                    >
+                      3
+                    </button>
+                  </div>
+                  <div class="col-lg-auto text-group">
+                    <div class="carousel-caption d-block">
+                      <div class="m-carousel-indicators d-lg-none d-flex justify-content-center">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        >
+                          1
+                        </button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          class=""
+                          aria-label="Slide 2"
+                        >
+                          2
+                        </button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 3"
+                        >
+                          3
+                        </button>
+                      </div>
+                      <h3 class="carousel-title title">THE TERMINOLOGY…</h3>
+                      <h2 class="technology-name-title title mt-3 text-uppercase">SPACE CAPSULE</h2>
+                      <p class="carousel-text description mt-3 mt-sm-4">
+                        A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+                        capsule to reenter the Earth's atmosphere without wings. Our capsule is
+                        where you'll spend your time during the flight. It includes a space gym,
+                        cinema, and plenty of other activities to keep you entertained.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col col-lg-auto text-center">
+                    <img
+                      class="carousel-img"
+                      src="./images/Space-Capsule-img.jpg"
+                      alt="Space Capsule photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

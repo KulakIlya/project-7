@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Normalize CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,41 +14,103 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body id="home-page-body">
-    <header class="header">
-      <a class="logo" href="index.html">
-        <svg width="48" height="48">
-          <use xlink:href="./images/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <div class="container">
-        <hr />
-        <nav class="navigation">
-          <ul class="nav-list list">
-            <li class="item current"><a href="#">00 HOME</a></li>
-            <li class="item"><a href="destination.html">01 DESTINATION</a></li>
-            <li class="item"><a href="crew.html">02 CREW</a></li>
-            <li class="item"><a href="#">03 TECHNOLOGY</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="group">
-            <p class="main-description">SO, YOU WANT TO TRAVEL TO</p>
-            <h1 class="section-title">SPACE</h1>
-            <p class="description">
-              Let’s face it; if you want to go to space, you might as well genuinely go to outer
-              space and not hover kind of on the edge of it. Well sit back, and relax because we’ll
-              give you a truly out of this world experience!
-            </p>
+    <header id="main-header">
+      <nav class="navbar navbar-expand-md" aria-label="Third navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0 bg-white rounded-circle" href="#">
+            <svg class="logo" width="48" height="48">
+              <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler me-4 p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <hr class="text-white d-none d-lg-inline" />
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mb-2 mb-sm-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link current" aria-current="page" href="#"
+                  ><span class="nav-number d-none d-lg-inline-block">00 </span>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destination.html"
+                  ><span class="nav-number d-none d-lg-inline-block">01 </span>Destination</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="crew.html"
+                  ><span class="nav-number d-none d-lg-inline-block">02 </span>Crew</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="technology.html"
+                  ><span class="nav-number d-none d-lg-inline-block">03 </span>Technology</a
+                >
+              </li>
+            </ul>
           </div>
-          <a class="btn" href="#">EXPLORE</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section id="hero">
+        <div class="container">
+          <div class="row hero-wrapper">
+            <div class="col-auto text-group">
+              <h2 class="section-title">SO, YOU WANT TO TRAVEL TO</h2>
+              <h1 class="main-heading title">SPACE</h1>
+              <p class="hero-text description">
+                Let’s face it; if you want to go to space, you might as well genuinely go to outer
+                space and not hover kind of on the edge of it. Well sit back, and relax because
+                we’ll give you a truly out of this world experience!
+              </p>
+            </div>
+            <div class="col-lg-4 ms-auto me-auto me-lg-0">
+              <a href="#" class="hero-btn btn btn-light rounded-circle">EXPLORE</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

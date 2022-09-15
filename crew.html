@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Normalize CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,53 +14,413 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body id="crew-page-body">
-    <header class="header">
-      <a class="logo" href="index.html">
-        <svg width="48" height="48">
-          <use xlink:href="./images/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <div class="container">
-        <hr />
-        <nav class="navigation">
-          <ul class="nav-list list">
-            <li class="item"><a href="index.html">00 HOME</a></li>
-            <li class="item">
-              <a href="destination.html">01 DESTINATION</a>
-            </li>
-            <li class="item current"><a href="#">02 CREW</a></li>
-            <li class="item"><a href="#">03 TECHNOLOGY</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="meet-crew">
-        <div class="container">
-          <div class="group">
-            <h2 class="title">MEET YOUR CREW</h2>
-            <p class="main-description">COMMANDER</p>
-            <h1 class="section-title">DOUGLAS HURLEY</h1>
+    <header id="main-header">
+      <nav class="navbar navbar-expand-md" aria-label="Third navbar example">
+        <div class="container-fluid ps-4">
+          <a class="navbar-brand p-0 bg-white rounded-circle" href="index.html">
+            <svg class="logo" width="48" height="48">
+              <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler me-4 p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <hr class="text-white d-none d-lg-inline" />
 
-            <p class="description">
-              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former
-              NASA astronaut. He launched into space for the third time as commander of Crew Dragon
-              Demo-2.
-            </p>
-            <div class="btn-group">
-              <ul class="list btn-list">
-                <li class="item"><button class="active" type="button"></button></li>
-                <li class="item"><button type="button"></button></li>
-                <li class="item"><button type="button"></button></li>
-                <li class="item"><button type="button"></button></li>
-              </ul>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mb-2 mb-sm-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><span class="nav-number d-none d-lg-inline-block">00 </span>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destination.html"
+                  ><span class="nav-number d-none d-lg-inline-block">01 </span>Destination</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="#" aria-current="page"
+                  ><span class="nav-number d-none d-lg-inline-block">02 </span>Crew</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="technology.html"
+                  ><span class="nav-number d-none d-lg-inline-block">03 </span>Technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section id="crew">
+        <div class="container-fluid container-lg">
+          <h3 class="section-title text-uppercase ms-4 ms-lg-0">Meet your crew</h3>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-touch="true"
+            data-bs-interval="10000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-between">
+                  <div class="col-lg-auto text-center">
+                    <img
+                      class="carousel-img"
+                      src="./images/Douglas-Hurley-img.png"
+                      alt="Douglas Hurley photo"
+                    />
+                  </div>
+                  <div class="col-lg-auto text-group">
+                    <div class="carousel-caption d-block">
+                      <div class="m-carousel-indicators d-sm-none mb-4">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button
+                        ><button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                      <h3 class="carousel-title title">COMMANDER</h3>
+                      <h2 class="crew-name-title title text-uppercase">Douglas Hurley</h2>
+                      <p class="carousel-text description mt-3 mt-sm-4">
+                        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and
+                        former NASA astronaut. He launched into space for the third time as
+                        commander of Crew Dragon Demo-2.
+                      </p>
+                      <div class="carousel-indicators d-none d-sm-block">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button
+                        ><button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-between">
+                  <div class="col-lg-auto text-center">
+                    <img
+                      class="carousel-img"
+                      src="./images/Mark-Shuttleworth-img.png"
+                      alt="Mark Shuttleworth photo"
+                    />
+                  </div>
+                  <div class="col-lg-auto text-group">
+                    <div class="carousel-caption d-block">
+                      <div class="m-carousel-indicators d-sm-none mb-4">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button
+                        ><button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                      <h3 class="carousel-title title">MISSION SPECIALIST</h3>
+                      <h2 class="crew-name-title title text-uppercase">Mark Shuttleworth</h2>
+                      <p class="carousel-text description mt-3 mt-sm-4">
+                        Mark Richard Shuttleworth is the founder and CEO of Canonical, the company
+                        behind the Linux-based Ubuntu operating system. Shuttleworth became the
+                        first South African to travel to space as a space tourist.
+                      </p>
+                      <div class="carousel-indicators d-none d-sm-block">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button
+                        ><button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-between">
+                  <div class="col-lg-auto text-center">
+                    <img
+                      class="carousel-img"
+                      src="./images/Victor-Glover-img.png"
+                      alt="Victor Glover photo"
+                    />
+                  </div>
+                  <div class="col-lg-auto text-group">
+                    <div class="carousel-caption d-block">
+                      <div class="m-carousel-indicators d-sm-none mb-4">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 3"
+                        ></button
+                        ><button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                      <h3 class="carousel-title title">PILOT</h3>
+                      <h2 class="crew-name-title title text-uppercase">Victor Glover</h2>
+                      <p class="carousel-text description mt-3 mt-sm-4">
+                        Pilot on the first operational flight of the SpaceX Crew Dragon to the
+                        International Space Station. Glover is a commander in the U.S. Navy where he
+                        pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+                        station systems flight engineer.
+                      </p>
+                      <div class="carousel-indicators d-none d-sm-block">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 3"
+                        ></button
+                        ><button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-between">
+                  <div class="col-lg-auto text-center">
+                    <img
+                      class="carousel-img"
+                      src="./images/Anousheh-Ansari-img.png"
+                      alt="Anousheh Ansari photo"
+                    />
+                  </div>
+                  <div class="col-lg-auto text-group">
+                    <div class="carousel-caption d-block">
+                      <div class="m-carousel-indicators d-sm-none mb-4">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button
+                        ><button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="3"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                      <h3 class="carousel-title title">FLIGHT ENGINEER</h3>
+                      <h2 class="crew-name-title title text-uppercase">Anousheh Ansari</h2>
+                      <p class="carousel-text description mt-3 mt-sm-4">
+                        Anousheh Ansari is an Iranian American engineer and co-founder of Prodea
+                        Systems. Ansari was the fourth self-funded space tourist, the first
+                        self-funded woman to fly to the ISS, and the first Iranian in space.
+                      </p>
+                      <div class="carousel-indicators d-none d-sm-block">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button
+                        ><button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="3"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <img id="douglas-img" src="./images/Douglas-Hurley-img.png" alt="Douglas Hurley photo" />
         </div>
       </section>
     </main>
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
