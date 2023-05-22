@@ -37,7 +37,7 @@ section:not(#hero) {
 }
 
 .navbar-toggler-icon {
-  background-image: url(/images/burger.svg);
+  background-image: url(../images/burger.svg);
   width: 1.5rem;
   height: 1.3125rem;
 }
@@ -88,7 +88,7 @@ section:not(#hero) {
 
 /* Home page */
 #home-page-body {
-  background-image: url(/images/home-background.jpg);
+  background-image: url(../images/home-background.jpg);
   background-size: cover;
 }
 
@@ -229,7 +229,7 @@ section:not(#hero) {
 /* Destination page */
 
 #destination-page-body {
-  background-image: url(/images/destination-background.jpg);
+  background-image: url(../images/destination-background.jpg);
   background-size: cover;
 }
 
@@ -324,7 +324,7 @@ section:not(#hero) {
 /* Crew page */
 
 #crew-page-body {
-  background-image: url(/images/crew-background.jpg);
+  background-image: url(../images/crew-background.jpg);
   background-size: cover;
 }
 
@@ -406,7 +406,7 @@ section:not(#hero) {
 /* Technology page */
 
 #technology-page-body {
-  background-image: url(/images/technology-background.png);
+  background-image: url(../images/technology-background.png);
   background-size: cover;
 }
 
@@ -629,7 +629,7 @@ section:not(#hero) {
   }
 
   #home-page-body {
-    background-image: url(/images/m-home-backgound.jpg);
+    background-image: url(../images/m-home-backgound.jpg);
     background-size: cover;
   }
 
